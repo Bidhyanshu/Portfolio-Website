@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf9ff">
+  <meta name="description" content="Bidhyanshu Poudel's software development portfolio featuring projects, technical skills, education, and contact information.">
+  <title>Bidhyanshu Poudel | Software Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <a class="brand" href="#home" aria-label="Bidhyanshu Poudel home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Bidhyanshu<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        type="button">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-home" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+
+      <a class="resume-nav" href="Resume.docx"
+        target="_blank" rel="noopener noreferrer">
+        <span aria-hidden="true">↧</span> Download Resume
+      </a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO / INTRODUCTION -->
+    <section class="hero container" id="home">
+
+      <div class="hero-art" aria-label="Decorative developer illustration">
+        <div class="blob blob-pink"></div>
+        <div class="blob blob-purple"></div>
+
+        <div class="scribble scribble-arrow" aria-hidden="true">↘</div>
+        <div class="doodle doodle-star" aria-hidden="true">✳</div>
+        <div class="doodle doodle-spark" aria-hidden="true">✧</div>
+
+        <div class="desk-scene">
+          <div class="desk-glow"></div>
+
+          <div class="avatar-halo">
+            <div class="avatar-head">
+              <div class="avatar-hair"></div>
+              <div class="avatar-face">
+                <span class="eye eye-left"></span>
+                <span class="eye eye-right"></span>
+                <span class="smile"></span>
+              </div>
+            </div>
+
+            <div class="avatar-body">
+              <span class="hoodie-seam"></span>
+              <span class="hoodie-pocket"></span>
+            </div>
+          </div>
+
+          <div class="laptop">
+            <div class="laptop-screen">
+              <div class="laptop-bar">
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>IDE / PROJECT</span>
+              </div>
+
+              <div class="code-lines">
+                <b></b><i></i><i></i><b></b>
+                <i></i><i></i><b></b><i></i>
+              </div>
+
+              <div class="laptop-sticker">{ BP }</div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+
+        <div class="sticky-note">
+          <span>currently:</span>
+          <strong>building cool<br>things &amp; learning<br>every day</strong>
+          <em>✦</em>
+        </div>
+
+        <div class="coffee-doodle" aria-hidden="true">
+          ☕ <span>curiosity</span>
+        </div>
+
+        <div class="art-caption">
+          A WORK IN PROGRESS — IN THE BEST WAY
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          HEY THERE, I'M <span class="wave">👋</span>
+        </p>
+
+        <h1>Bidhyanshu<br><span class="name-accent">Poudel.</span></h1>
+
+        <p class="hero-role">
+          A <span>software developer</span><br>
+          who loves turning ideas<br>
+          into real-world solutions.
+        </p>
+
+        <p class="hero-description">
+          I'm a Computer Systems Technician – Software Support student
+          at Mohawk College. I enjoy building applications, learning
+          new technologies, and solving problems through code.
+          Every project gives me another opportunity to learn,
+          experiment, and improve.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my projects <span>↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#contact">
+            <span aria-hidden="true">✉</span> Let's connect
+          </a>
+        </div>
+
+        <div class="hero-footnote">
+          <span>📍 HAMILTON, CANADA</span>
+          <span class="mini-divider"></span>
+          <span>OPEN TO LEARNING &amp; OPPORTUNITIES</span>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="side-label">What I love doing <span>↴</span></div>
+
+        <div class="what-card">
+          <div class="what-row">
+            <span class="what-icon icon-pink">▧</span>
+            <span>Building useful applications</span>
+          </div>
+
+          <div class="what-row">
+            <span class="what-icon icon-purple">✦</span>
+            <span>Solving problems</span>
+          </div>
+
+          <div class="what-row">
+            <span class="what-icon icon-blue">⌘</span>
+            <span>Writing clean code</span>
+          </div>
+
+          <div class="what-row">
+            <span class="what-icon icon-orange">✎</span>
+            <span>Learning something new</span>
+          </div>
+        </div>
+
+        <div class="tech-label">Tools in my toolbox <span>↘</span></div>
+
+        <div class="tech-tiles" aria-label="Technologies">
+          <div class="tech-tile tile-js">
+            <b>JS</b><small>JavaScript</small>
+          </div>
+          <div class="tech-tile tile-html">
+            <b>&lt;/&gt;</b><small>HTML/CSS</small>
+          </div>
+          <div class="tech-tile tile-php">
+            <b>php</b><small>PHP</small>
+          </div>
+          <div class="tech-tile tile-db">
+            <b>DB</b><small>SQL</small>
+          </div>
+          <div class="tech-tile tile-cs">
+            <b>C#</b><small>C Sharp</small>
+          </div>
+        </div>
+
+        <div class="side-spark" aria-hidden="true">✧</div>
+      </aside>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-band" id="projects">
+      <div class="container projects-layout">
+
+        <div class="projects-intro">
+          <p class="eyebrow">MY LITTLE CORNER OF THE INTERNET</p>
+          <h2>Things I've<br><span>built.</span></h2>
+          <p>
+            These projects represent my journey into software development.
+            Each one gives me a chance to practise skills, explore ideas,
+            and become a better problem solver.
+          </p>
+          <div class="drawn-arrow" aria-hidden="true">↗</div>
+        </div>
+
+        <div class="project-cards">
+
+          <!-- PROJECT 1: ACADEMIQUEST -->
+          <article class="project-card">
+            <div class="project-preview preview-academi">
+              <div class="preview-window">
+                <div class="preview-toolbar">
+                  <span></span><span></span><span></span>
+                  <small>ACADEMIQUEST</small>
+                </div>
+
+                <div class="preview-dashboard">
+                  <div class="preview-sidebar">
+                    <i></i><i></i><i></i><i></i>
+                  </div>
+
+                  <div class="preview-content">
+                    <b></b><i></i>
+                    <div class="preview-stat-row">
+                      <span></span><span></span>
+                    </div>
+                    <div class="preview-table">
+                      <i></i><i></i><i></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <span class="project-pill pill-purple">PHP + MySQL</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker">PROJECT 01 · WEB APPLICATION</p>
+              <h3>AcademiQuest</h3>
+
+              <p>
+                A web application project using PHP and MySQL.
+                Explore the repository to see the source code and
+                implementation details.
+              </p>
+
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+              </div>
+
+              <a class="project-link"
+                href="https://github.com/Bidhyanshu/Academic-Quest"
+                target="_blank" rel="noopener noreferrer">
+                View source code <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: STUDENT UTILITY -->
+          <article class="project-card">
+            <div class="project-preview preview-food">
+              <div class="food-mock">
+                <div class="food-topline">
+                  <b>Student Utility</b>
+                  <span>STUDENT TOOLS</span>
+                </div>
+
+                <div class="food-hero">
+                  <span>Study smarter.<br><strong>Stay organised.</strong></span>
+                  <b class="burger-art" aria-hidden="true">📚</b>
+                </div>
+
+                <div class="food-items">
+                  <i></i><i></i><i></i>
+                </div>
+              </div>
+
+              <span class="project-pill pill-pink">STUDENT PROJECT</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker">PROJECT 02 · APPLICATION</p>
+              <h3>Student Utility</h3>
+
+              <p>
+                A student-focused software project. Visit the repository
+                to explore the code and see the features implemented.
+              </p>
+
+              <div class="project-tags">
+                <span>Software</span>
+                <span>GitHub</span>
+                <span>Development</span>
+              </div>
+
+              <a class="project-link"
+                href="https://github.com/Bidhyanshu/Student-Utility"
+                target="_blank" rel="noopener noreferrer">
+                View source code <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: APARTMENT LAYOUT -->
+          <article class="project-card">
+            <div class="project-preview preview-salon">
+              <div class="salon-mock">
+                <div class="salon-heading">
+                  <span>LAYOUT / DESIGN</span>
+                  <b>Make room for ideas ✦</b>
+                </div>
+
+                <div class="salon-service">
+                  <span>Space planning</span><b>••••</b>
+                </div>
+
+                <div class="salon-service">
+                  <span>Layout design</span><b>••••</b>
+                </div>
+
+                <div class="salon-total">
+                  <span>PROJECT</span><b>🏠</b>
+                </div>
+              </div>
+
+              <span class="project-pill pill-mint">LAYOUT PROJECT</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker">PROJECT 03 · DESIGN</p>
+              <h3>Apartment Layout</h3>
+
+              <p>
+                An apartment layout project. Visit the GitHub repository
+                to view the project files and implementation.
+              </p>
+
+              <div class="project-tags">
+                <span>Project Design</span>
+                <span>GitHub</span>
+              </div>
+
+              <a class="project-link"
+                href="https://github.com/Bidhyanshu/Apartment-Project"
+                target="_blank" rel="noopener noreferrer">
+                View source code <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="more-projects-note">
+          More ideas to explore<br>and more skills to learn! <span>↘</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-strip section container" id="about">
+
+      <div class="about-title">
+        <p class="eyebrow">A LITTLE BIT MORE</p>
+        <h2>A little bit<br><span>about me.</span></h2>
+        <div class="about-doodle" aria-hidden="true">✳</div>
+      </div>
+
+      <div class="about-story">
+        <p class="story-lead">
+          I'm curious about how things work — and even more curious
+          about how I can make them work better.
+        </p>
+
+        <p>
+          My learning journey combines programming, web development,
+          databases, and software tools. I enjoy breaking problems
+          into smaller steps, testing ideas, and learning from mistakes.
+          I believe that every bug fixed and every feature completed
+          is a chance to improve.
+        </p>
+
+        <a class="text-link" href="#education">
+          A little more about my journey <span>↗</span>
+        </a>
+      </div>
+
+      <div class="about-moments">
+        <div class="moment moment-code">
+          <div class="moment-art code-art">
+            <span>&lt;code&gt;</span>
+            <i></i><i></i><i></i>
+            <b>01</b>
+          </div>
+          <span class="moment-caption">Making things work</span>
+        </div>
+
+        <div class="moment moment-ideas">
+          <div class="moment-art idea-art">
+            <span>✦</span>
+            <b>WHAT IF?</b>
+            <i></i>
+          </div>
+          <span class="moment-caption">Asking better questions</span>
+        </div>
+
+        <div class="moment moment-learn">
+          <div class="moment-art learn-art">
+            <span>↗</span>
+            <b>LEARN / BUILD / REPEAT</b>
+          </div>
+          <span class="moment-caption">Getting a little better</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-header-centered">
+          <p class="eyebrow">THE THINGS I'M LEARNING TO DO WELL</p>
+          <h2>My toolkit, <span>so far.</span></h2>
+          <p>
+            Technologies I've studied or used in coursework and projects.
+            I'm always working to improve my skills.
+          </p>
+        </div>
+
+        <div class="skill-list-grid">
+
+          <div class="skill-list-card">
+            <span class="skill-emoji">💻</span>
+            <h3>Programming</h3>
+            <p>Java · C# · JavaScript · PHP</p>
+          </div>
+
+          <div class="skill-list-card">
+            <span class="skill-emoji">🎨</span>
+            <h3>Web Development</h3>
+            <p>HTML · CSS · Bootstrap 5 · REST APIs</p>
+          </div>
+
+          <div class="skill-list-card">
+            <span class="skill-emoji">🗄️</span>
+            <h3>Databases</h3>
+            <p>MySQL · MariaDB · PDO · phpMyAdmin</p>
+          </div>
+
+          <div class="skill-list-card">
+            <span class="skill-emoji">🧰</span>
+            <h3>Tools &amp; Testing</h3>
+            <p>Git · GitHub · VS Code · JUnit · XAMPP</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+      <div class="container education-inner">
+
+        <div>
+          <p class="eyebrow">THE FOUNDATION</p>
+          <h2>Learning by doing.<br><span>Growing with every project.</span></h2>
+        </div>
+
+        <article class="education-card">
+          <div class="education-badge">🎓</div>
+
+          <div>
+            <p class="education-kicker">EDUCATION</p>
+            <h3>Mohawk College</h3>
+
+            <p class="education-program">
+              Computer Systems Technician – Software Support
+            </p>
+
+            <p class="education-description">
+              Developing practical foundations in programming,
+              web development, databases, software tools,
+              and technical problem-solving.
+            </p>
+          </div>
+
+          <span class="education-spark">✦</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume-section container" id="resume">
+      <div class="resume-card">
+
+        <div class="resume-sticker" aria-hidden="true">📄</div>
+
+        <div class="resume-copy">
+          <p class="eyebrow">WANT THE PROFESSIONAL VERSION?</p>
+          <h2>Let's put the details<br><span>on paper.</span></h2>
+
+          <p>
+            My resume brings together my education, technical skills,
+            experience, and professional background.
+          </p>
+        </div>
+
+        <a class="button button-primary"
+          href="Resume.docx"
+          target="_blank"
+          rel="noopener noreferrer">
+          Download my resume <span>↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+
+        <p class="eyebrow">THE NEXT CHAPTER</p>
+        <h2>Have an idea?<br><span>Let's make something.</span></h2>
+
+        <p class="contact-description">
+          Let's connect about software, projects, learning opportunities,
+          or the next challenge worth solving.
+        </p>
+
+        <a class="contact-email" href="mailto:bidhyanshu12@gmail.com">
+          bidhyanshu12@gmail.com <span>↗</span>
+        </a>
+
+        <div class="social-links">
+          <a href="https://github.com/Bidhyanshu"
+            target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+
+          <a href="https://www.linkedin.com/in/bidhyanshu-poudel-6038b7318/"
+            target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+        </div>
+
+        <div class="contact-spark spark-one" aria-hidden="true">✧</div>
+        <div class="contact-spark spark-two" aria-hidden="true">✳</div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <a class="brand" href="#home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>BP<span class="brand-dot">.</span></span>
+      </a>
+
+      <p>Made with curiosity, creativity, and code.</p>
+
+      <span>© <span id="current-year">2026</span> Bidhyanshu Poudel</span>
+
+    </div>
+  </footer>
+
+</body>
+</html>
