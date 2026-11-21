@@ -182,394 +182,10 @@ section[id] {
     min-height: 420px;
     padding-block: 34px 43px;
     display: grid;
-    grid-template-columns: minmax(0, .88fr) minmax(0, 1.15fr) minmax(0, .87fr);
+    grid-template-columns: minmax(0, 1.25fr) minmax(310px, .75fr);
     align-items: center;
     gap: 28px;
     position: relative
-}
-
-.hero-art {
-    height: 350px;
-    position: relative;
-    isolation: isolate
-}
-
-.blob {
-    position: absolute;
-    border-radius: 45% 55% 63% 37%/43% 38% 62% 57%;
-    z-index: -1
-}
-
-.blob-pink {
-    width: 66%;
-    height: 66%;
-    top: 10%;
-    left: 12%;
-    background: linear-gradient(135deg, #ffd3ed, #f6a5e9)
-}
-
-.blob-purple {
-    width: 69%;
-    height: 57%;
-    bottom: 4%;
-    right: 2%;
-    background: linear-gradient(135deg, #cbb3ff, #a77aff);
-    transform: rotate(-12deg)
-}
-
-.desk-scene {
-    position: absolute;
-    inset: 35px 0 0;
-    overflow: hidden
-}
-
-.desk-glow {
-    position: absolute;
-    left: 15%;
-    top: 7%;
-    width: 68%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: #fff9;
-    filter: blur(2px)
-}
-
-.avatar-halo {
-    position: absolute;
-    left: 27%;
-    top: 2%;
-    width: 43%;
-    height: 76%;
-}
-
-.avatar-head {
-    position: absolute;
-    top: 0;
-    left: 17%;
-    width: 68%;
-    height: 49%;
-    border-radius: 47% 48% 43% 46%;
-    background: #f0bb91;
-    border: 3px solid #302144;
-    z-index: 2;
-    box-shadow: inset -9px -5px #de9d80
-}
-
-.avatar-hair {
-    position: absolute;
-    left: -8%;
-    top: -11%;
-    width: 115%;
-    height: 56%;
-    border-radius: 55% 48% 42% 35%;
-    background: #38233f;
-    transform: rotate(-8deg)
-}
-
-.avatar-hair:before,
-.avatar-hair:after {
-    content: "";
-    position: absolute;
-    background: #38233f;
-    border-radius: 50%
-}
-
-.avatar-hair:before {
-    width: 25%;
-    height: 105%;
-    left: -2%;
-    top: 20%;
-    transform: rotate(10deg)
-}
-
-.avatar-hair:after {
-    width: 34%;
-    height: 110%;
-    right: -5%;
-    top: 35%;
-    transform: rotate(-10deg)
-}
-
-.avatar-face {
-    position: absolute;
-    inset: 28% 13% 8%;
-    z-index: 2
-}
-
-.eye {
-    position: absolute;
-    top: 32%;
-    width: 5px;
-    height: 7px;
-    background: #271a32;
-    border-radius: 50%
-}
-
-.eye-left {
-    left: 22%
-}
-
-.eye-right {
-    right: 20%
-}
-
-.smile {
-    position: absolute;
-    left: 36%;
-    top: 53%;
-    width: 24%;
-    height: 10px;
-    border-bottom: 3px solid #9d4f58;
-    border-radius: 0 0 50% 50%
-}
-
-.avatar-body {
-    position: absolute;
-    left: -5%;
-    bottom: -15%;
-    width: 110%;
-    height: 65%;
-    border-radius: 46% 45% 0 0;
-    background: linear-gradient(135deg, #a77aff, #7039c8);
-    border: 3px solid #302144;
-    overflow: hidden
-}
-
-.hoodie-seam {
-    position: absolute;
-    top: 0;
-    left: 45%;
-    width: 22%;
-    height: 42%;
-    border-left: 2px solid #d4c1ff;
-    border-right: 2px solid #d4c1ff;
-    transform: skew(-8deg)
-}
-
-.hoodie-pocket {
-    position: absolute;
-    left: 30%;
-    bottom: 20%;
-    width: 37%;
-    height: 24%;
-    border: 2px solid #d4c1ff;
-    border-radius: 5px 5px 12px 12px
-}
-
-.laptop {
-    position: absolute;
-    bottom: 1%;
-    left: 0;
-    width: 66%;
-    height: 39%;
-    transform: rotate(-7deg);
-    z-index: 4
-}
-
-.laptop-screen {
-    height: 87%;
-    background: #e9e9f5;
-    border: 5px solid #9698b8;
-    border-bottom-width: 8px;
-    border-radius: 11px 11px 4px 4px;
-    padding: 7px 9px;
-    box-shadow: 0 10px 20px #2c174523;
-    position: relative;
-    overflow: hidden
-}
-
-.laptop-bar {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    border-bottom: 1px solid #d4d2e5;
-    padding-bottom: 5px
-}
-
-.laptop-bar i {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #f3a1d7
-}
-
-.laptop-bar i:nth-child(2) {
-    background: #ffcb87
-}
-
-.laptop-bar i:nth-child(3) {
-    background: #9fe7cd
-}
-
-.laptop-bar span {
-    margin-left: auto;
-    font: 5px var(--mono);
-    color: #75688c
-}
-
-.code-lines {
-    display: grid;
-    gap: 5px;
-    padding: 9px 2px
-}
-
-.code-lines b,
-.code-lines i {
-    height: 4px;
-    width: 68%;
-    border-radius: 4px;
-    background: #a58af1
-}
-
-.code-lines i {
-    width: 46%;
-    background: #e39bd4
-}
-
-.code-lines b:nth-of-type(2) {
-    width: 81%;
-    background: #8dd8c1
-}
-
-.laptop-sticker {
-    position: absolute;
-    right: 8px;
-    bottom: 8px;
-    background: #fff;
-    color: #7041ce;
-    border-radius: 5px;
-    padding: 3px 5px;
-    font: 7px var(--mono)
-}
-
-.laptop-base {
-    width: 111%;
-    height: 9px;
-    margin-left: -5%;
-    background: linear-gradient(#b5b5d1, #7e80a4);
-    border-radius: 2px 2px 12px 12px
-}
-
-.hand-note {
-    position: absolute;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    color: #23173f;
-    font-size: 11px;
-    line-height: 1.4;
-    font-weight: 800;
-    transform: rotate(-8deg)
-}
-
-.hand-note span {
-    font-weight: 600
-}
-
-.note-problem {
-    left: 0;
-    top: 14%
-}
-
-.note-ideas {
-    right: -1%;
-    top: 8%;
-    transform: rotate(5deg)
-}
-
-.scribble {
-    position: absolute;
-    z-index: 6;
-    font-size: 30px;
-    color: #8d61ff
-}
-
-.scribble-arrow {
-    left: 2%;
-    top: 38%;
-    transform: rotate(25deg)
-}
-
-.doodle {
-    position: absolute;
-    z-index: 6;
-    line-height: 1;
-    color: var(--pink)
-}
-
-.doodle-star {
-    right: 8%;
-    top: 44%;
-    font-size: 29px;
-    transform: rotate(16deg)
-}
-
-.doodle-spark {
-    left: 17%;
-    bottom: 20%;
-    font-size: 30px;
-    color: #8d65ff
-}
-
-.sticky-note {
-    position: absolute;
-    right: 0;
-    bottom: 5%;
-    z-index: 8;
-    width: 124px;
-    transform: rotate(5deg);
-    padding: 14px 13px;
-    background: #fff9e9;
-    border: 1px solid #f3dba4;
-    border-radius: 10px;
-    box-shadow: 0 8px 17px #6a468c12;
-    line-height: 1.35
-}
-
-.sticky-note span {
-    display: block;
-    font: italic 10px var(--mono);
-    color: #54425d
-}
-
-.sticky-note strong {
-    display: block;
-    margin-top: 4px;
-    font-size: 11px;
-    line-height: 1.45
-}
-
-.sticky-note em {
-    position: absolute;
-    right: 10px;
-    bottom: 7px;
-    color: #ffad52
-}
-
-.coffee-doodle {
-    position: absolute;
-    bottom: 3%;
-    left: 4%;
-    z-index: 8;
-    color: #312147;
-    font-size: 20px;
-    transform: rotate(-9deg)
-}
-
-.coffee-doodle span {
-    display: block;
-    font-size: 9px;
-    font-weight: 800;
-    margin-left: 5px
-}
-
-.art-caption {
-    position: absolute;
-    bottom: -22px;
-    left: 3px;
-    color: #9987b0;
-    font: 8px var(--mono);
-    letter-spacing: .6px
 }
 
 .hero-copy {
@@ -1864,7 +1480,7 @@ section[id] {
     }
 
     .hero {
-        grid-template-columns: minmax(0, .8fr) minmax(0, 1.1fr);
+        grid-template-columns: 1fr;
         gap: 24px;
         padding-block: 32px 50px
     }
@@ -2047,17 +1663,6 @@ section[id] {
 
     .hero-description {
         font-size: 12px
-    }
-
-    .hero-art {
-        grid-row: 2;
-        width: min(100%, 430px);
-        height: 305px;
-        margin: 0 auto
-    }
-
-    .art-caption {
-        bottom: -13px
     }
 
     .hero-side {
@@ -2330,10 +1935,6 @@ section[id] {
         font-size: 10px
     }
 
-    .hero-art {
-        height: 275px
-    }
-
     .sticky-note {
         width: 110px;
         padding: 10px
@@ -2598,7 +2199,7 @@ button:focus-visible {
 }
 /* QA card: keep the fifth toolkit card balanced across desktop and mobile. */
 .skill-list-card.qa-card {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
     display: grid;
     grid-template-columns: 38px minmax(0, 1fr);
     align-content: center;
@@ -2627,6 +2228,42 @@ button:focus-visible {
 
 @media (max-width: 700px) {
     .skill-list-card.qa-card {
+        grid-column: 1 / -1;
+    }
+}
+
+
+.skill-list-card.management-card {
+    grid-column: 3 / span 2;
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    align-content: center;
+    align-items: center;
+    gap: 4px 13px;
+    min-height: 112px;
+    border-color: #d8c5eb;
+    background: linear-gradient(120deg, #fff, #f9eef9);
+}
+
+.skill-list-card.management-card .skill-emoji {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background: #fce3f3;
+}
+
+.skill-list-card.management-card h3,
+.skill-list-card.management-card p {
+    grid-column: 2;
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .hero-side {
+        grid-row: auto;
+    }
+
+    .skill-list-card.qa-card,
+    .skill-list-card.management-card {
         grid-column: 1 / -1;
     }
 }
