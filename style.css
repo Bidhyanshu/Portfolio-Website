@@ -548,7 +548,7 @@ section[id] {
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 13px;
     align-items: stretch
 }
@@ -1556,7 +1556,7 @@ section[id] {
     }
 
     .project-cards {
-        grid-template-columns: repeat(3, minmax(0, 1fr))
+        grid-template-columns: repeat(2, minmax(0, 1fr))
     }
 
     .about-strip {
@@ -2240,6 +2240,53 @@ button:focus-visible {
 .preview-map {
     background: radial-gradient(ellipse at 50% 30%, #d8e7dd 0%, transparent 68%), #e9f2ec;
 }
+
+.preview-studybuddy {
+    background: radial-gradient(ellipse at 50% 25%, #d8ccff 0%, transparent 68%), #f0edff;
+}
+
+.studybuddy-mock {
+    width: 82%;
+    min-height: 90px;
+    padding: 13px 15px;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 9px;
+    align-content: center;
+    border: 1px solid #e6e0f5;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 20px #3e21551c;
+    transform: rotate(-2deg);
+}
+
+.studybuddy-mark {
+    width: 29px;
+    height: 29px;
+    display: grid;
+    place-items: center;
+    grid-row: span 2;
+    border-radius: 9px;
+    background: #7254d8;
+    color: #fff;
+    font-weight: 700;
+}
+
+.studybuddy-copy b,
+.studybuddy-copy small { display: block; }
+.studybuddy-copy b { color: #302749; font-size: 11px; }
+.studybuddy-copy small { margin-top: 2px; color: #817b91; font-size: 8px; }
+.studybuddy-search {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    padding: 6px 8px;
+    border: 1px solid #eeeaf6;
+    border-radius: 6px;
+    color: #918ba0;
+    font-size: 8px;
+}
+.studybuddy-topics { grid-column: 1 / -1; display: flex; gap: 5px; margin-top: 7px; }
+.studybuddy-topics i { padding: 3px 6px; border-radius: 9px; background: #f1edff; color: #6549c2; font-size: 7px; font-style: normal; }
 
 .ham-map-mock {
     position: relative;
