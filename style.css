@@ -1141,7 +1141,7 @@ section[id] {
 
 .skill-list-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 13px
 }
 
@@ -1672,7 +1672,7 @@ section[id] {
     }
 
     .hero-side {
-        grid-row: 3;
+        grid-row: 2;
         grid-template-columns: 1fr;
         gap: 12px;
         padding-top: 4px
@@ -2201,75 +2201,5 @@ button:focus-visible {
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
-    }
-}
-/* QA card: keep the fifth toolkit card balanced across desktop and mobile. */
-.skill-list-card.qa-card {
-    grid-column: 1 / span 2;
-    display: grid;
-    grid-template-columns: 38px minmax(0, 1fr);
-    align-content: center;
-    align-items: center;
-    gap: 4px 13px;
-    min-height: 112px;
-    border-color: #bfb0e6;
-    background: linear-gradient(120deg, #fff, #f1ecff);
-}
-
-.skill-list-card.qa-card .skill-emoji {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    background: #e6ddff;
-}
-
-.skill-list-card.qa-card h3 {
-    grid-column: 2;
-    margin-top: 0;
-}
-
-.skill-list-card.qa-card p {
-    grid-column: 2;
-    margin-top: 0;
-}
-
-@media (max-width: 700px) {
-    .skill-list-card.qa-card {
-        grid-column: 1 / -1;
-    }
-}
-
-
-.skill-list-card.management-card {
-    grid-column: 3 / span 2;
-    display: grid;
-    grid-template-columns: 38px minmax(0, 1fr);
-    align-content: center;
-    align-items: center;
-    gap: 4px 13px;
-    min-height: 112px;
-    border-color: #d8c5eb;
-    background: linear-gradient(120deg, #fff, #f9eef9);
-}
-
-.skill-list-card.management-card .skill-emoji {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    background: #fce3f3;
-}
-
-.skill-list-card.management-card h3,
-.skill-list-card.management-card p {
-    grid-column: 2;
-    margin-top: 0;
-}
-
-@media (max-width: 700px) {
-    .hero-side {
-        grid-row: auto;
-    }
-
-    .skill-list-card.qa-card,
-    .skill-list-card.management-card {
-        grid-column: 1 / -1;
     }
 }
