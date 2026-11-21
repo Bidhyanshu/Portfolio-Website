@@ -554,6 +554,7 @@ section[id] {
 }
 
 .project-card {
+    position: relative;
     min-width: 0;
     overflow: hidden;
     background: #fff;
@@ -2202,4 +2203,36 @@ button:focus-visible {
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
     }
+}
+.project-card-hitarea {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    border-radius: inherit;
+}
+
+.project-card-hitarea:focus-visible {
+    outline: 3px solid #d92f98;
+    outline-offset: -4px;
+}
+
+.project-actions {
+    position: relative;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px 13px;
+    margin-top: 10px;
+}
+
+.project-actions .project-link {
+    margin-top: 0;
+}
+
+.project-live-link {
+    padding: 6px 9px;
+    border: 1px solid #d8cdf4;
+    border-radius: 9px;
+    background: #f5f1ff;
 }
